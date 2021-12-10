@@ -1,8 +1,7 @@
 import math as m
 
-# basic primality test with reduced search space
-
 def prime_checker(n):
+    # basic primality test with reduced search space
     for i in range(2,m.floor(m.sqrt(n))):
             print(f"Checking for {i}")
             if n % i == 0:
