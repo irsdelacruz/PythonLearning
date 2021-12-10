@@ -1,5 +1,7 @@
 import math as m
 
+# basic primality test with reduced search space
+
 def prime_checker(n):
     for i in range(2,m.floor(m.sqrt(n))):
             print(f"Checking for {i}")
@@ -21,5 +23,6 @@ def is_prime(n: int) -> bool:
         i += 6
     return True
 
-n = int(input("Check this number: "))
-print(f"{n} is a prime? {is_prime(n)}")
+if __name__ == "__main__":
+    n = int(input("Check this number: "))
+    print(f"{n} is a prime? {is_prime(n)}")
