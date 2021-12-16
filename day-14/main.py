@@ -43,12 +43,9 @@ def runGame():
             print(f"Sorry, that's {result}. Final score: {score}")
             break
 
-        # if A was higher, retain it. Otherwise, set A to B then generate a new itemB
-        if answer == "B":
-            itemA = itemB
+        itemA = itemB
         indexB = R.randint(0,len(dataCopy)-1)
         itemB = dataCopy.pop(indexB)
-
         os.system("cls")
         
 
